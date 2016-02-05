@@ -11,6 +11,8 @@ import RxSwift
 import CoreLocation
 import WatchConnectivity
 
+
+
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate, WCSessionDelegate {
     
@@ -18,7 +20,6 @@ class AppDelegate: UIResponder, UIApplicationDelegate, WCSessionDelegate {
     private var apiClient: ApiClient!
     private var locationManager: CSLocationManager!
     
-    static var WEB_API_KEY:String = "YOUR API KEY"
     
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
         
