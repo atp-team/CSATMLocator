@@ -9,8 +9,6 @@ This repository contains iOS application demonstrating the usage of API of Ceska
 
 #Installation
 
-**IMPORTANT!** You need to have your SSH keys registered with the GitHub since this repository is private.
-
 1) Install latest version of [Carthage](https://github.com/Carthage/Carthage) and make sure you have recent version of `git`.
 
 2) Clone this repository using command `git clone git@github.com:[tbd]`
