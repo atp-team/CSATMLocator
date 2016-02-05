@@ -22,7 +22,6 @@
 		262F93F81C60107E00E0576A /* ApiManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 260F121D1BAA0EAF00223799 /* ApiManager.swift */; };
 		26D189841C6000510032499F /* CSATMLocator WatchKit Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = E8BB6FAA1BAD91CC0045F267 /* CSATMLocator WatchKit Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		26D189871C6000510032499F /* CSATMLocator WatchKit App.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = E8BB6FB71BAD91CC0045F267 /* CSATMLocator WatchKit App.app */; };
-		505C20091C64ACE400210A2C /* rejkavik.gpx in Resources */ = {isa = PBXBuildFile; fileRef = 505C20081C64ACE400210A2C /* rejkavik.gpx */; };
 		E81E9EAF1BAD2DF200FB8DCF /* CSLocationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = E81E9EAE1BAD2DF200FB8DCF /* CSLocationManager.swift */; };
 		E8BB6FAF1BAD91CC0045F267 /* InterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8BB6FAE1BAD91CC0045F267 /* InterfaceController.swift */; };
 		E8BB6FB11BAD91CC0045F267 /* NotificationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8BB6FB01BAD91CC0045F267 /* NotificationController.swift */; };
@@ -110,7 +109,6 @@
 		262F93F01C60106C00E0576A /* RxSwift.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RxSwift.framework; path = Carthage/Build/iOS/RxSwift.framework; sourceTree = "<group>"; };
 		262F93F11C60106C00E0576A /* RxTests.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RxTests.framework; path = Carthage/Build/iOS/RxTests.framework; sourceTree = "<group>"; };
 		262F93F91C6010A900E0576A /* Alamofire.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Alamofire.framework; path = Carthage/Build/watchOS/Alamofire.framework; sourceTree = "<group>"; };
-		505C20081C64ACE400210A2C /* rejkavik.gpx */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; name = rejkavik.gpx; path = "../../../Dropbox/Programovani/obj c/DCG/nunu-ios/rejkavik.gpx"; sourceTree = "<group>"; };
 		E81E9EAE1BAD2DF200FB8DCF /* CSLocationManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CSLocationManager.swift; sourceTree = "<group>"; };
 		E85D11521C615B3B006DB1AA /* RxBlocking.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RxBlocking.framework; path = Carthage/Build/watchOS/RxBlocking.framework; sourceTree = "<group>"; };
 		E85D11531C615B3B006DB1AA /* RxCocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RxCocoa.framework; path = Carthage/Build/watchOS/RxCocoa.framework; sourceTree = "<group>"; };
@@ -158,7 +156,6 @@
 		260F11B71BAA083600223799 = {
 			isa = PBXGroup;
 			children = (
-				505C20081C64ACE400210A2C /* rejkavik.gpx */,
 				260F11C21BAA083600223799 /* CSATMLocator */,
 				E8BB6FAB1BAD91CC0045F267 /* CSATMLocator WatchKit 1 Extension */,
 				E8BB6FBB1BAD91CD0045F267 /* CSATMLocator WatchKit 1 App */,
@@ -397,7 +394,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				505C20091C64ACE400210A2C /* rejkavik.gpx in Resources */,
 				260F11CE1BAA083600223799 /* LaunchScreen.storyboard in Resources */,
 				260F11CB1BAA083600223799 /* Assets.xcassets in Resources */,
 				E8D381591BAD374400927472 /* CSViewController.xib in Resources */,

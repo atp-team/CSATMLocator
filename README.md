@@ -23,6 +23,8 @@ This repository contains iOS application demonstrating the usage of API of Ceska
 
 ##Running CSAS ATM Locator
 
+To call API you need first obtain WEB_API_KEY from [WebApi developer portal](https://developers.csas.cz/html/devs/)
+
 To see how the demo application works, just open the project `CSATMLocator.xcodeproj` in Xcode.
 
 Implementation of the application is in group `CSATMLocator`. Pay special attention to `ApiManager.swift` to and `ApiClient.swift` to observe how to communicate with the API.

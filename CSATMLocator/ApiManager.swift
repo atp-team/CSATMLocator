@@ -119,7 +119,7 @@ class ApiManager {
     static let baseURL = "https://api.csas.cz/sandbox/webapi/api/v2"
     
     static let sharedInstance: Manager = {
-        var defaultHeaders = Alamofire.Manager.sharedInstance.session.configuration.HTTPAdditionalHeaders ?? ["WEB-API-key":"<api key from WebApi service>"]
+        var defaultHeaders = Alamofire.Manager.sharedInstance.session.configuration.HTTPAdditionalHeaders ?? ["WEB-API-key":AppDelegate.WEB_API_KEY]
         let configuration = NSURLSessionConfiguration.defaultSessionConfiguration()
         configuration.HTTPAdditionalHeaders = defaultHeaders
 
