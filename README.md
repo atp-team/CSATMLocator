@@ -15,7 +15,7 @@ This repository contains iOS application demonstrating the usage of API of Ceska
 
 2) Clone this repository using command `git clone git@github.com:[tbd]`
 
-3) Enter into cloned directory using command `cd csatmlocator`.
+3) Enter into cloned directory using command `cd CSATMLocator`.
 
 6) Run command `carthage update` to download and set up dependencies and build schemes. This may take up to 30 minutes as dependencies have to be built for more platforms. Patience is the key to get everything working.
 
