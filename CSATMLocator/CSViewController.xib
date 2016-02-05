@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9531" systemVersion="15C50" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <mutableArray key="AvenirNext.ttc">
+            <string>AvenirNext-Medium</string>
+            <string>AvenirNext-Medium</string>
+        </mutableArray>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="CSViewController" customModule="CSATMLocator" customModuleProvider="target">
+            <connections>
+                <outlet property="bottomConstraint" destination="j2t-GP-vQD" id="2q1-MR-V3l"/>
+                <outlet property="leftConstraint" destination="FXL-as-8T8" id="5yH-VU-ESc"/>
+                <outlet property="mapView" destination="2u1-TK-TnH" id="Bsu-uF-dme"/>
+                <outlet property="minimizeButton" destination="bul-TH-hY1" id="R6C-HI-WKE"/>
+                <outlet property="navigateButton" destination="OTD-b1-TLr" id="yt7-SH-aYK"/>
+                <outlet property="reloadButton" destination="Pys-wK-aof" id="aCN-5e-6D4"/>
+                <outlet property="topConstraint" destination="5TK-2F-HHV" id="TGa-ST-BEk"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ttP-IF-Jpm">
+                    <rect key="frame" x="0.0" y="498" width="320" height="70"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="70" id="6NO-4E-Kwm"/>
+                    </constraints>
+                </view>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ribbon.png" translatesAutoresizingMaskIntoConstraints="NO" id="jqo-aA-fFe">
+                    <rect key="frame" x="40" y="400" width="240" height="43"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="43" id="1tb-Sz-meA"/>
+                        <constraint firstAttribute="width" constant="240" id="5d2-m0-ybD"/>
+                    </constraints>
+                </imageView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Navštíveno 27 Bankomatů" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WDK-iD-eec">
+                    <rect key="frame" x="76" y="417" width="169" height="20"/>
+                    <fontDescription key="fontDescription" name="AvenirNext-Medium" family="Avenir Next" pointSize="14"/>
+                    <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Nejbližší bankomat:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="o4M-vX-ErD">
+                    <rect key="frame" x="69" y="51" width="183" height="27"/>
+                    <fontDescription key="fontDescription" name="AvenirNext-Medium" family="Avenir Next" pointSize="20"/>
+                    <color key="textColor" red="0.0" green="0.33333333329999998" blue="0.57647058819999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="2u1-TK-TnH">
+                    <rect key="frame" x="20" y="100" width="280" height="280"/>
+                    <constraints>
+                        <constraint firstAttribute="width" secondItem="2u1-TK-TnH" secondAttribute="height" multiplier="1:1" priority="500" id="4Vi-oO-HqQ"/>
+                    </constraints>
+                </mapView>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OTD-b1-TLr">
+                    <rect key="frame" x="243" y="323" width="45" height="45"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="45" id="GWF-w7-ovs"/>
+                        <constraint firstAttribute="height" constant="45" id="gGV-Md-WSw"/>
+                    </constraints>
+                    <inset key="contentEdgeInsets" minX="6" minY="7" maxX="6" maxY="6"/>
+                    <state key="normal" image="navigate.png"/>
+                    <connections>
+                        <action selector="navigateButtonPressed" destination="-1" eventType="touchUpInside" id="foF-9d-CEy"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bul-TH-hY1">
+                    <rect key="frame" x="243" y="111" width="45" height="45"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="45" id="Tai-FA-jRL"/>
+                        <constraint firstAttribute="width" constant="45" id="k1c-h2-mMG"/>
+                    </constraints>
+                    <inset key="contentEdgeInsets" minX="6" minY="7" maxX="6" maxY="7"/>
+                    <state key="normal" image="minimize.png"/>
+                    <connections>
+                        <action selector="minimizeButtonPressed" destination="-1" eventType="touchUpInside" id="WI3-Zk-nQM"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Pys-wK-aof">
+                    <rect key="frame" x="33" y="323" width="45" height="45"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="45" id="RLR-On-Iwh"/>
+                        <constraint firstAttribute="height" constant="45" id="zPa-RV-AWK"/>
+                    </constraints>
+                    <inset key="contentEdgeInsets" minX="10" minY="11" maxX="10" maxY="10"/>
+                    <state key="normal" image="reload.png"/>
+                    <connections>
+                        <action selector="reloadButtonPressed" destination="-1" eventType="touchUpInside" id="UXs-ii-jRq"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="2u1-TK-TnH" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="0gc-Sd-yqQ"/>
+                <constraint firstItem="2u1-TK-TnH" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" priority="250" id="5TK-2F-HHV"/>
+                <constraint firstItem="bul-TH-hY1" firstAttribute="leading" secondItem="2u1-TK-TnH" secondAttribute="trailing" constant="-57" id="C7x-r7-bdE"/>
+                <constraint firstItem="2u1-TK-TnH" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" priority="250" id="FXL-as-8T8"/>
+                <constraint firstItem="OTD-b1-TLr" firstAttribute="leading" secondItem="2u1-TK-TnH" secondAttribute="trailing" constant="-57" id="FXd-LT-s3F"/>
+                <constraint firstItem="Pys-wK-aof" firstAttribute="top" secondItem="2u1-TK-TnH" secondAttribute="bottom" constant="-57" id="GCI-wP-76N"/>
+                <constraint firstItem="2u1-TK-TnH" firstAttribute="top" secondItem="bul-TH-hY1" secondAttribute="bottom" constant="-56" id="Loa-Ic-fqc"/>
+                <constraint firstItem="WDK-iD-eec" firstAttribute="centerX" secondItem="jqo-aA-fFe" secondAttribute="centerX" id="QQI-It-8Te"/>
+                <constraint firstItem="2u1-TK-TnH" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" priority="500" constant="100" id="XM0-qs-WIP"/>
+                <constraint firstItem="ttP-IF-Jpm" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="XQq-Qg-bD5"/>
+                <constraint firstItem="2u1-TK-TnH" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" priority="500" constant="20" id="b4U-Ie-Xer"/>
+                <constraint firstItem="jqo-aA-fFe" firstAttribute="top" secondItem="2u1-TK-TnH" secondAttribute="bottom" constant="20" id="eWM-TY-aO9"/>
+                <constraint firstItem="2u1-TK-TnH" firstAttribute="top" secondItem="o4M-vX-ErD" secondAttribute="bottom" constant="22" id="gTa-BZ-fi5"/>
+                <constraint firstItem="ttP-IF-Jpm" firstAttribute="width" secondItem="i5M-Pr-FkT" secondAttribute="width" id="ghK-r1-Wth"/>
+                <constraint firstAttribute="bottom" secondItem="2u1-TK-TnH" secondAttribute="bottom" priority="250" id="j2t-GP-vQD"/>
+                <constraint firstItem="o4M-vX-ErD" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="kGP-Q0-PJc"/>
+                <constraint firstItem="ttP-IF-Jpm" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="bottom" constant="-70" id="kJ8-Qf-8b5"/>
+                <constraint firstItem="2u1-TK-TnH" firstAttribute="leading" secondItem="Pys-wK-aof" secondAttribute="trailing" constant="-58" id="vlC-gF-QlG"/>
+                <constraint firstItem="WDK-iD-eec" firstAttribute="centerY" secondItem="jqo-aA-fFe" secondAttribute="centerY" constant="5" id="waX-9I-Hot"/>
+                <constraint firstItem="OTD-b1-TLr" firstAttribute="top" secondItem="2u1-TK-TnH" secondAttribute="bottom" constant="-57" id="z29-d8-cZu"/>
+                <constraint firstItem="jqo-aA-fFe" firstAttribute="centerX" secondItem="ttP-IF-Jpm" secondAttribute="centerX" id="znn-i9-dQQ"/>
+            </constraints>
+            <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="minimize.png" width="45" height="44"/>
+        <image name="navigate.png" width="45" height="44"/>
+        <image name="reload.png" width="45" height="44"/>
+        <image name="ribbon.png" width="240" height="43"/>
+    </resources>
+</document>

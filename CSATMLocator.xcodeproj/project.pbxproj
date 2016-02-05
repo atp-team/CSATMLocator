@@ -1,0 +1,780 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		260F11C41BAA083600223799 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 260F11C31BAA083600223799 /* AppDelegate.swift */; };
+		260F11CB1BAA083600223799 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 260F11CA1BAA083600223799 /* Assets.xcassets */; };
+		260F11CE1BAA083600223799 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 260F11CC1BAA083600223799 /* LaunchScreen.storyboard */; };
+		260F121C1BAA0E2000223799 /* SwiftyJSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = 260F121B1BAA0E2000223799 /* SwiftyJSON.swift */; };
+		260F121E1BAA0EAF00223799 /* ApiManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 260F121D1BAA0EAF00223799 /* ApiManager.swift */; };
+		260F12201BAA0F4300223799 /* CSError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 260F121F1BAA0F4300223799 /* CSError.swift */; };
+		260F12231BAA128B00223799 /* ATM.swift in Sources */ = {isa = PBXBuildFile; fileRef = 260F12221BAA128B00223799 /* ATM.swift */; };
+		260F12271BAAD6A300223799 /* ApiClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 260F12261BAAD6A300223799 /* ApiClient.swift */; };
+		262F93F21C60106C00E0576A /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 262F93EC1C60106C00E0576A /* Alamofire.framework */; };
+		262F93F41C60106C00E0576A /* RxBlocking.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 262F93EE1C60106C00E0576A /* RxBlocking.framework */; };
+		262F93F51C60106C00E0576A /* RxCocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 262F93EF1C60106C00E0576A /* RxCocoa.framework */; };
+		262F93F61C60106C00E0576A /* RxSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 262F93F01C60106C00E0576A /* RxSwift.framework */; };
+		262F93F81C60107E00E0576A /* ApiManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 260F121D1BAA0EAF00223799 /* ApiManager.swift */; };
+		26D189841C6000510032499F /* CSATMLocator WatchKit Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = E8BB6FAA1BAD91CC0045F267 /* CSATMLocator WatchKit Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		26D189871C6000510032499F /* CSATMLocator WatchKit App.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = E8BB6FB71BAD91CC0045F267 /* CSATMLocator WatchKit App.app */; };
+		505C20091C64ACE400210A2C /* rejkavik.gpx in Resources */ = {isa = PBXBuildFile; fileRef = 505C20081C64ACE400210A2C /* rejkavik.gpx */; };
+		E81E9EAF1BAD2DF200FB8DCF /* CSLocationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = E81E9EAE1BAD2DF200FB8DCF /* CSLocationManager.swift */; };
+		E8BB6FAF1BAD91CC0045F267 /* InterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8BB6FAE1BAD91CC0045F267 /* InterfaceController.swift */; };
+		E8BB6FB11BAD91CC0045F267 /* NotificationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8BB6FB01BAD91CC0045F267 /* NotificationController.swift */; };
+		E8BB6FB31BAD91CC0045F267 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E8BB6FB21BAD91CC0045F267 /* Assets.xcassets */; };
+		E8BB6FBE1BAD91CD0045F267 /* Interface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E8BB6FBC1BAD91CD0045F267 /* Interface.storyboard */; };
+		E8BB6FC01BAD91CD0045F267 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E8BB6FBF1BAD91CD0045F267 /* Assets.xcassets */; };
+		E8BB6FD71BAD99AE0045F267 /* ATM.swift in Sources */ = {isa = PBXBuildFile; fileRef = 260F12221BAA128B00223799 /* ATM.swift */; };
+		E8BB6FD81BAD9FD70045F267 /* SwiftyJSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = 260F121B1BAA0E2000223799 /* SwiftyJSON.swift */; };
+		E8BB6FDA1BAD9FEC0045F267 /* CSError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 260F121F1BAA0F4300223799 /* CSError.swift */; };
+		E8BB6FDD1BADAB490045F267 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 260F11CA1BAA083600223799 /* Assets.xcassets */; };
+		E8BB6FE21BAE78A80045F267 /* CSNavigation.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8BB6FE11BAE78A80045F267 /* CSNavigation.swift */; };
+		E8D381581BAD374400927472 /* CSViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8D381561BAD374400927472 /* CSViewController.swift */; };
+		E8D381591BAD374400927472 /* CSViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = E8D381571BAD374400927472 /* CSViewController.xib */; };
+		E8D3815C1BAD46D800927472 /* CSStyles.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8D3815B1BAD46D800927472 /* CSStyles.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		26D189821C6000510032499F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 260F11B81BAA083600223799 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E8BB6FA91BAD91CC0045F267;
+			remoteInfo = "CSATMLocator WatchKit Extension";
+		};
+		26D189851C6000510032499F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 260F11B81BAA083600223799 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E8BB6FB61BAD91CC0045F267;
+			remoteInfo = "CSATMLocator WatchKit App";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		260F12101BAA083600223799 /* Embed Watch Content */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "$(CONTENTS_FOLDER_PATH)/Watch";
+			dstSubfolderSpec = 16;
+			files = (
+			);
+			name = "Embed Watch Content";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		26D189881C6000510032499F /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				26D189841C6000510032499F /* CSATMLocator WatchKit Extension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		26D189891C6000510032499F /* Embed Watch Content */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "$(CONTENTS_FOLDER_PATH)/Watch";
+			dstSubfolderSpec = 16;
+			files = (
+				26D189871C6000510032499F /* CSATMLocator WatchKit App.app in Embed Watch Content */,
+			);
+			name = "Embed Watch Content";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		260F11C01BAA083600223799 /* CSATMLocator.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CSATMLocator.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		260F11C31BAA083600223799 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; lineEnding = 0; path = AppDelegate.swift; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
+		260F11CA1BAA083600223799 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		260F11CD1BAA083600223799 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		260F11CF1BAA083600223799 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		260F121B1BAA0E2000223799 /* SwiftyJSON.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwiftyJSON.swift; sourceTree = "<group>"; };
+		260F121D1BAA0EAF00223799 /* ApiManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ApiManager.swift; sourceTree = "<group>"; };
+		260F121F1BAA0F4300223799 /* CSError.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CSError.swift; sourceTree = "<group>"; };
+		260F12221BAA128B00223799 /* ATM.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ATM.swift; sourceTree = "<group>"; };
+		260F12261BAAD6A300223799 /* ApiClient.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; lineEnding = 0; path = ApiClient.swift; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
+		262F93EB1C60098C00E0576A /* Cartfile */ = {isa = PBXFileReference; lastKnownFileType = text; path = Cartfile; sourceTree = SOURCE_ROOT; };
+		262F93EC1C60106C00E0576A /* Alamofire.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Alamofire.framework; path = Carthage/Build/iOS/Alamofire.framework; sourceTree = "<group>"; };
+		262F93ED1C60106C00E0576A /* MMWormhole.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MMWormhole.framework; path = Carthage/Build/iOS/MMWormhole.framework; sourceTree = "<group>"; };
+		262F93EE1C60106C00E0576A /* RxBlocking.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RxBlocking.framework; path = Carthage/Build/iOS/RxBlocking.framework; sourceTree = "<group>"; };
+		262F93EF1C60106C00E0576A /* RxCocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RxCocoa.framework; path = Carthage/Build/iOS/RxCocoa.framework; sourceTree = "<group>"; };
+		262F93F01C60106C00E0576A /* RxSwift.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RxSwift.framework; path = Carthage/Build/iOS/RxSwift.framework; sourceTree = "<group>"; };
+		262F93F11C60106C00E0576A /* RxTests.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RxTests.framework; path = Carthage/Build/iOS/RxTests.framework; sourceTree = "<group>"; };
+		262F93F91C6010A900E0576A /* Alamofire.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Alamofire.framework; path = Carthage/Build/watchOS/Alamofire.framework; sourceTree = "<group>"; };
+		505C20081C64ACE400210A2C /* rejkavik.gpx */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; name = rejkavik.gpx; path = "../../../Dropbox/Programovani/obj c/DCG/nunu-ios/rejkavik.gpx"; sourceTree = "<group>"; };
+		E81E9EAE1BAD2DF200FB8DCF /* CSLocationManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CSLocationManager.swift; sourceTree = "<group>"; };
+		E85D11521C615B3B006DB1AA /* RxBlocking.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RxBlocking.framework; path = Carthage/Build/watchOS/RxBlocking.framework; sourceTree = "<group>"; };
+		E85D11531C615B3B006DB1AA /* RxCocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RxCocoa.framework; path = Carthage/Build/watchOS/RxCocoa.framework; sourceTree = "<group>"; };
+		E85D11541C615B3B006DB1AA /* RxSwift.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RxSwift.framework; path = Carthage/Build/watchOS/RxSwift.framework; sourceTree = "<group>"; };
+		E862A52D1BAAECF100B6DAF8 /* CSATMLocator.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = CSATMLocator.entitlements; sourceTree = "<group>"; };
+		E8BB6FAA1BAD91CC0045F267 /* CSATMLocator WatchKit Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "CSATMLocator WatchKit Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		E8BB6FAD1BAD91CC0045F267 /* PushNotificationPayload.apns */ = {isa = PBXFileReference; lastKnownFileType = text; path = PushNotificationPayload.apns; sourceTree = "<group>"; };
+		E8BB6FAE1BAD91CC0045F267 /* InterfaceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InterfaceController.swift; sourceTree = "<group>"; };
+		E8BB6FB01BAD91CC0045F267 /* NotificationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationController.swift; sourceTree = "<group>"; };
+		E8BB6FB21BAD91CC0045F267 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		E8BB6FB41BAD91CC0045F267 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E8BB6FB71BAD91CC0045F267 /* CSATMLocator WatchKit App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "CSATMLocator WatchKit App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		E8BB6FBD1BAD91CD0045F267 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Interface.storyboard; sourceTree = "<group>"; };
+		E8BB6FBF1BAD91CD0045F267 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		E8BB6FC11BAD91CD0045F267 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E8BB6FD41BAD93A60045F267 /* CSATMLocator WatchKit 1 Extension.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = "CSATMLocator WatchKit 1 Extension.entitlements"; sourceTree = "<group>"; };
+		E8BB6FE11BAE78A80045F267 /* CSNavigation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CSNavigation.swift; sourceTree = "<group>"; };
+		E8D381561BAD374400927472 /* CSViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; lineEnding = 0; path = CSViewController.swift; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
+		E8D381571BAD374400927472 /* CSViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CSViewController.xib; sourceTree = "<group>"; };
+		E8D3815B1BAD46D800927472 /* CSStyles.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CSStyles.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		260F11BD1BAA083600223799 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				262F93F21C60106C00E0576A /* Alamofire.framework in Frameworks */,
+				262F93F41C60106C00E0576A /* RxBlocking.framework in Frameworks */,
+				262F93F51C60106C00E0576A /* RxCocoa.framework in Frameworks */,
+				262F93F61C60106C00E0576A /* RxSwift.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E8BB6FA71BAD91CC0045F267 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		260F11B71BAA083600223799 = {
+			isa = PBXGroup;
+			children = (
+				505C20081C64ACE400210A2C /* rejkavik.gpx */,
+				260F11C21BAA083600223799 /* CSATMLocator */,
+				E8BB6FAB1BAD91CC0045F267 /* CSATMLocator WatchKit 1 Extension */,
+				E8BB6FBB1BAD91CD0045F267 /* CSATMLocator WatchKit 1 App */,
+				260F11C11BAA083600223799 /* Products */,
+				F061FE747AF3222251485367 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		260F11C11BAA083600223799 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				260F11C01BAA083600223799 /* CSATMLocator.app */,
+				E8BB6FAA1BAD91CC0045F267 /* CSATMLocator WatchKit Extension.appex */,
+				E8BB6FB71BAD91CC0045F267 /* CSATMLocator WatchKit App.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		260F11C21BAA083600223799 /* CSATMLocator */ = {
+			isa = PBXGroup;
+			children = (
+				E81E9EAD1BAD2DE200FB8DCF /* services */,
+				E862A52D1BAAECF100B6DAF8 /* CSATMLocator.entitlements */,
+				260F121A1BAA0DEE00223799 /* api */,
+				260F11C31BAA083600223799 /* AppDelegate.swift */,
+				E8D3815A1BAD374B00927472 /* view controllers */,
+				260F11CA1BAA083600223799 /* Assets.xcassets */,
+				260F11CC1BAA083600223799 /* LaunchScreen.storyboard */,
+				260F11CF1BAA083600223799 /* Info.plist */,
+				262F93EB1C60098C00E0576A /* Cartfile */,
+			);
+			path = CSATMLocator;
+			sourceTree = "<group>";
+		};
+		260F121A1BAA0DEE00223799 /* api */ = {
+			isa = PBXGroup;
+			children = (
+				260F12211BAA126B00223799 /* model */,
+				260F121F1BAA0F4300223799 /* CSError.swift */,
+				260F121D1BAA0EAF00223799 /* ApiManager.swift */,
+				260F121B1BAA0E2000223799 /* SwiftyJSON.swift */,
+				260F12261BAAD6A300223799 /* ApiClient.swift */,
+			);
+			name = api;
+			sourceTree = "<group>";
+		};
+		260F12211BAA126B00223799 /* model */ = {
+			isa = PBXGroup;
+			children = (
+				260F12221BAA128B00223799 /* ATM.swift */,
+			);
+			name = model;
+			sourceTree = "<group>";
+		};
+		E81E9EAD1BAD2DE200FB8DCF /* services */ = {
+			isa = PBXGroup;
+			children = (
+				E8D3815B1BAD46D800927472 /* CSStyles.swift */,
+				E81E9EAE1BAD2DF200FB8DCF /* CSLocationManager.swift */,
+				E8BB6FE11BAE78A80045F267 /* CSNavigation.swift */,
+			);
+			name = services;
+			sourceTree = "<group>";
+		};
+		E8BB6FAB1BAD91CC0045F267 /* CSATMLocator WatchKit 1 Extension */ = {
+			isa = PBXGroup;
+			children = (
+				E8BB6FD41BAD93A60045F267 /* CSATMLocator WatchKit 1 Extension.entitlements */,
+				E8BB6FAE1BAD91CC0045F267 /* InterfaceController.swift */,
+				E8BB6FB01BAD91CC0045F267 /* NotificationController.swift */,
+				E8BB6FB21BAD91CC0045F267 /* Assets.xcassets */,
+				E8BB6FB41BAD91CC0045F267 /* Info.plist */,
+				E8BB6FAC1BAD91CC0045F267 /* Supporting Files */,
+			);
+			path = "CSATMLocator WatchKit 1 Extension";
+			sourceTree = "<group>";
+		};
+		E8BB6FAC1BAD91CC0045F267 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				E8BB6FAD1BAD91CC0045F267 /* PushNotificationPayload.apns */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		E8BB6FBB1BAD91CD0045F267 /* CSATMLocator WatchKit 1 App */ = {
+			isa = PBXGroup;
+			children = (
+				E8BB6FBC1BAD91CD0045F267 /* Interface.storyboard */,
+				E8BB6FBF1BAD91CD0045F267 /* Assets.xcassets */,
+				E8BB6FC11BAD91CD0045F267 /* Info.plist */,
+			);
+			path = "CSATMLocator WatchKit 1 App";
+			sourceTree = "<group>";
+		};
+		E8D3815A1BAD374B00927472 /* view controllers */ = {
+			isa = PBXGroup;
+			children = (
+				E8D381561BAD374400927472 /* CSViewController.swift */,
+				E8D381571BAD374400927472 /* CSViewController.xib */,
+			);
+			name = "view controllers";
+			sourceTree = "<group>";
+		};
+		F061FE747AF3222251485367 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				E85D11521C615B3B006DB1AA /* RxBlocking.framework */,
+				E85D11531C615B3B006DB1AA /* RxCocoa.framework */,
+				E85D11541C615B3B006DB1AA /* RxSwift.framework */,
+				262F93F91C6010A900E0576A /* Alamofire.framework */,
+				262F93EC1C60106C00E0576A /* Alamofire.framework */,
+				262F93ED1C60106C00E0576A /* MMWormhole.framework */,
+				262F93EE1C60106C00E0576A /* RxBlocking.framework */,
+				262F93EF1C60106C00E0576A /* RxCocoa.framework */,
+				262F93F01C60106C00E0576A /* RxSwift.framework */,
+				262F93F11C60106C00E0576A /* RxTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		260F11BF1BAA083600223799 /* CSATMLocator */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 260F12111BAA083600223799 /* Build configuration list for PBXNativeTarget "CSATMLocator" */;
+			buildPhases = (
+				260F11BC1BAA083600223799 /* Sources */,
+				260F11BD1BAA083600223799 /* Frameworks */,
+				260F11BE1BAA083600223799 /* Resources */,
+				260F12101BAA083600223799 /* Embed Watch Content */,
+				E85D112C1C611738006DB1AA /* ShellScript */,
+				26D189891C6000510032499F /* Embed Watch Content */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				26D189861C6000510032499F /* PBXTargetDependency */,
+			);
+			name = CSATMLocator;
+			productName = CSATMLocator;
+			productReference = 260F11C01BAA083600223799 /* CSATMLocator.app */;
+			productType = "com.apple.product-type.application";
+		};
+		E8BB6FA91BAD91CC0045F267 /* CSATMLocator WatchKit Extension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E8BB6FC81BAD91CD0045F267 /* Build configuration list for PBXNativeTarget "CSATMLocator WatchKit Extension" */;
+			buildPhases = (
+				E8BB6FA61BAD91CC0045F267 /* Sources */,
+				E8BB6FA71BAD91CC0045F267 /* Frameworks */,
+				E8BB6FA81BAD91CC0045F267 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "CSATMLocator WatchKit Extension";
+			productName = "CSATMLocator WatchKit 1 Extension";
+			productReference = E8BB6FAA1BAD91CC0045F267 /* CSATMLocator WatchKit Extension.appex */;
+			productType = "com.apple.product-type.watchkit2-extension";
+		};
+		E8BB6FB61BAD91CC0045F267 /* CSATMLocator WatchKit App */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E8BB6FC51BAD91CD0045F267 /* Build configuration list for PBXNativeTarget "CSATMLocator WatchKit App" */;
+			buildPhases = (
+				E8BB6FB51BAD91CC0045F267 /* Resources */,
+				26D189881C6000510032499F /* Embed App Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				26D189831C6000510032499F /* PBXTargetDependency */,
+			);
+			name = "CSATMLocator WatchKit App";
+			productName = "CSATMLocator WatchKit 1 App";
+			productReference = E8BB6FB71BAD91CC0045F267 /* CSATMLocator WatchKit App.app */;
+			productType = "com.apple.product-type.application.watchapp2";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		260F11B81BAA083600223799 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0720;
+				LastUpgradeCheck = 0720;
+				ORGANIZATIONNAME = "Vratislav Kalenda";
+				TargetAttributes = {
+					260F11BF1BAA083600223799 = {
+						CreatedOnToolsVersion = 7.0;
+						DevelopmentTeam = E2Q27ZEA7C;
+						SystemCapabilities = {
+							com.apple.ApplicationGroups.iOS = {
+								enabled = 1;
+							};
+						};
+					};
+					E8BB6FA91BAD91CC0045F267 = {
+						CreatedOnToolsVersion = 7.0;
+						DevelopmentTeam = E2Q27ZEA7C;
+						SystemCapabilities = {
+							com.apple.ApplicationGroups.iOS = {
+								enabled = 1;
+							};
+						};
+					};
+					E8BB6FB61BAD91CC0045F267 = {
+						CreatedOnToolsVersion = 7.0;
+						DevelopmentTeam = E2Q27ZEA7C;
+					};
+				};
+			};
+			buildConfigurationList = 260F11BB1BAA083600223799 /* Build configuration list for PBXProject "CSATMLocator" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 260F11B71BAA083600223799;
+			productRefGroup = 260F11C11BAA083600223799 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				260F11BF1BAA083600223799 /* CSATMLocator */,
+				E8BB6FA91BAD91CC0045F267 /* CSATMLocator WatchKit Extension */,
+				E8BB6FB61BAD91CC0045F267 /* CSATMLocator WatchKit App */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		260F11BE1BAA083600223799 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				505C20091C64ACE400210A2C /* rejkavik.gpx in Resources */,
+				260F11CE1BAA083600223799 /* LaunchScreen.storyboard in Resources */,
+				260F11CB1BAA083600223799 /* Assets.xcassets in Resources */,
+				E8D381591BAD374400927472 /* CSViewController.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E8BB6FA81BAD91CC0045F267 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E8BB6FB31BAD91CC0045F267 /* Assets.xcassets in Resources */,
+				E8BB6FDD1BADAB490045F267 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E8BB6FB51BAD91CC0045F267 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E8BB6FC01BAD91CD0045F267 /* Assets.xcassets in Resources */,
+				E8BB6FBE1BAD91CD0045F267 /* Interface.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		E85D112C1C611738006DB1AA /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"$(SRCROOT)/Carthage/Build/iOS/Alamofire.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/RxSwift.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/RxCocoa.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/RxBlocking.framework",
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "/usr/local/bin/carthage copy-frameworks";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		260F11BC1BAA083600223799 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				260F121E1BAA0EAF00223799 /* ApiManager.swift in Sources */,
+				260F121C1BAA0E2000223799 /* SwiftyJSON.swift in Sources */,
+				260F12201BAA0F4300223799 /* CSError.swift in Sources */,
+				260F12271BAAD6A300223799 /* ApiClient.swift in Sources */,
+				E8D3815C1BAD46D800927472 /* CSStyles.swift in Sources */,
+				260F12231BAA128B00223799 /* ATM.swift in Sources */,
+				E81E9EAF1BAD2DF200FB8DCF /* CSLocationManager.swift in Sources */,
+				E8D381581BAD374400927472 /* CSViewController.swift in Sources */,
+				260F11C41BAA083600223799 /* AppDelegate.swift in Sources */,
+				E8BB6FE21BAE78A80045F267 /* CSNavigation.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E8BB6FA61BAD91CC0045F267 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E8BB6FDA1BAD9FEC0045F267 /* CSError.swift in Sources */,
+				E8BB6FB11BAD91CC0045F267 /* NotificationController.swift in Sources */,
+				E8BB6FAF1BAD91CC0045F267 /* InterfaceController.swift in Sources */,
+				262F93F81C60107E00E0576A /* ApiManager.swift in Sources */,
+				E8BB6FD81BAD9FD70045F267 /* SwiftyJSON.swift in Sources */,
+				E8BB6FD71BAD99AE0045F267 /* ATM.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		26D189831C6000510032499F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = E8BB6FA91BAD91CC0045F267 /* CSATMLocator WatchKit Extension */;
+			targetProxy = 26D189821C6000510032499F /* PBXContainerItemProxy */;
+		};
+		26D189861C6000510032499F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = E8BB6FB61BAD91CC0045F267 /* CSATMLocator WatchKit App */;
+			targetProxy = 26D189851C6000510032499F /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		260F11CC1BAA083600223799 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				260F11CD1BAA083600223799 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		E8BB6FBC1BAD91CD0045F267 /* Interface.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				E8BB6FBD1BAD91CD0045F267 /* Base */,
+			);
+			name = Interface.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		260F12071BAA083600223799 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_BITCODE = YES;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PROVISIONING_PROFILE = "4993de85-e2fe-47f6-98ac-92ef20d7500a";
+				SDKROOT = iphoneos;
+				SWIFT_OBJC_BRIDGING_HEADER = "CSATMLocator/CSATMLocator-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		260F12081BAA083600223799 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_BITCODE = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PROVISIONING_PROFILE = "4993de85-e2fe-47f6-98ac-92ef20d7500a";
+				SDKROOT = iphoneos;
+				SWIFT_OBJC_BRIDGING_HEADER = "CSATMLocator/CSATMLocator-Bridging-Header.h";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		260F12121BAA083600223799 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = CSATMLocator/CSATMLocator.entitlements;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				ENABLE_BITCODE = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
+				INFOPLIST_FILE = CSATMLocator/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = cz.applifting.CSATMLocator;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				SWIFT_INSTALL_OBJC_HEADER = NO;
+				SWIFT_OBJC_BRIDGING_HEADER = "";
+			};
+			name = Debug;
+		};
+		260F12131BAA083600223799 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = CSATMLocator/CSATMLocator.entitlements;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				ENABLE_BITCODE = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
+				INFOPLIST_FILE = CSATMLocator/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = cz.applifting.CSATMLocator;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				SWIFT_INSTALL_OBJC_HEADER = NO;
+				SWIFT_OBJC_BRIDGING_HEADER = "";
+			};
+			name = Release;
+		};
+		E8BB6FC61BAD91CD0045F267 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
+				IBSC_MODULE = CSATMLocator_WatchKit_1_Extension;
+				INFOPLIST_FILE = "CSATMLocator WatchKit 1 App/Info.plist";
+				PRODUCT_BUNDLE_IDENTIFIER = cz.applifting.CSATMLocator.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 2.0;
+			};
+			name = Debug;
+		};
+		E8BB6FC71BAD91CD0045F267 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
+				IBSC_MODULE = CSATMLocator_WatchKit_1_Extension;
+				INFOPLIST_FILE = "CSATMLocator WatchKit 1 App/Info.plist";
+				PRODUCT_BUNDLE_IDENTIFIER = cz.applifting.CSATMLocator.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 2.0;
+			};
+			name = Release;
+		};
+		E8BB6FC91BAD91CD0045F267 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = "CSATMLocator WatchKit 1 Extension/CSATMLocator WatchKit 1 Extension.entitlements";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				ENABLE_BITCODE = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/watchOS",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
+				INFOPLIST_FILE = "CSATMLocator WatchKit 1 Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = cz.applifting.CSATMLocator.watchkitapp.watchkitextension;
+				PRODUCT_NAME = "${TARGET_NAME}";
+				PROVISIONING_PROFILE = "";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_INSTALL_OBJC_HEADER = NO;
+				SWIFT_OBJC_BRIDGING_HEADER = "";
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 2.0;
+			};
+			name = Debug;
+		};
+		E8BB6FCA1BAD91CD0045F267 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = "CSATMLocator WatchKit 1 Extension/CSATMLocator WatchKit 1 Extension.entitlements";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				ENABLE_BITCODE = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/watchOS",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
+				INFOPLIST_FILE = "CSATMLocator WatchKit 1 Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = cz.applifting.CSATMLocator.watchkitapp.watchkitextension;
+				PRODUCT_NAME = "${TARGET_NAME}";
+				PROVISIONING_PROFILE = "";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_INSTALL_OBJC_HEADER = NO;
+				SWIFT_OBJC_BRIDGING_HEADER = "";
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 2.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		260F11BB1BAA083600223799 /* Build configuration list for PBXProject "CSATMLocator" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				260F12071BAA083600223799 /* Debug */,
+				260F12081BAA083600223799 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		260F12111BAA083600223799 /* Build configuration list for PBXNativeTarget "CSATMLocator" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				260F12121BAA083600223799 /* Debug */,
+				260F12131BAA083600223799 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E8BB6FC51BAD91CD0045F267 /* Build configuration list for PBXNativeTarget "CSATMLocator WatchKit App" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E8BB6FC61BAD91CD0045F267 /* Debug */,
+				E8BB6FC71BAD91CD0045F267 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E8BB6FC81BAD91CD0045F267 /* Build configuration list for PBXNativeTarget "CSATMLocator WatchKit Extension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E8BB6FC91BAD91CD0045F267 /* Debug */,
+				E8BB6FCA1BAD91CD0045F267 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 260F11B81BAA083600223799 /* Project object */;
+}

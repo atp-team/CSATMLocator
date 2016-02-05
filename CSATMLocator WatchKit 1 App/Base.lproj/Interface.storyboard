@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder.WatchKit.Storyboard" version="3.0" toolsVersion="9531" systemVersion="15C50" targetRuntime="watchKit" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="AgC-eL-Hgc">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBWatchKitPlugin" version="9515"/>
+    </dependencies>
+    <scenes>
+        <!--ČS ATM-->
+        <scene sceneID="aou-V4-d1y">
+            <objects>
+                <controller title="ČS ATM" id="AgC-eL-Hgc" customClass="InterfaceController" customModule="CSATMLocator_WatchKit_Extension">
+                    <items>
+                        <label alignment="left" text="Načítám data" id="EMm-zr-p2r">
+                            <fontDescription key="font" style="UICTFontTextStyleCaption1"/>
+                        </label>
+                        <label alignment="left" text="---" numberOfLines="0" id="kZo-tk-ThM">
+                            <fontDescription key="font" type="system" pointSize="10"/>
+                        </label>
+                        <map height="100" alignment="left" id="Vgl-dq-EEV"/>
+                        <label alignment="center" text="Label" textAlignment="left" id="8qZ-ph-knE">
+                            <fontDescription key="font" type="italicSystem" pointSize="11"/>
+                            <variation key="device=watch42mm" text="Tap on the map to navigate"/>
+                        </label>
+                    </items>
+                    <variation key="default">
+                        <mask key="items">
+                            <exclude reference="8qZ-ph-knE"/>
+                        </mask>
+                    </variation>
+                    <variation key="device=watch42mm">
+                        <mask key="items">
+                            <include reference="8qZ-ph-knE"/>
+                        </mask>
+                    </variation>
+                    <connections>
+                        <outlet property="addressLabel" destination="kZo-tk-ThM" id="8VW-qj-Omt"/>
+                        <outlet property="map" destination="Vgl-dq-EEV" id="7ZD-xi-eze"/>
+                        <outlet property="nameLabel" destination="EMm-zr-p2r" id="YcZ-9L-SHY"/>
+                    </connections>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="220" y="345"/>
+        </scene>
+        <!--Static Notification Interface Controller-->
+        <scene sceneID="AEw-b0-oYE">
+            <objects>
+                <notificationController id="YCC-NB-fut">
+                    <items>
+                        <label alignment="left" text="Alert Label" id="IdU-wH-bcW"/>
+                    </items>
+                    <notificationCategory key="notificationCategory" identifier="myCategory" id="JfB-70-Muf"/>
+                    <connections>
+                        <outlet property="notificationAlertLabel" destination="IdU-wH-bcW" id="JKC-fr-R95"/>
+                        <segue destination="4sK-HA-Art" kind="relationship" relationship="dynamicNotificationInterface" id="kXh-Jw-8B1"/>
+                    </connections>
+                </notificationController>
+            </objects>
+            <point key="canvasLocation" x="220" y="643"/>
+        </scene>
+        <!--Notification Controller-->
+        <scene sceneID="ZPc-GJ-vnh">
+            <objects>
+                <controller id="4sK-HA-Art" customClass="NotificationController" customModule="CSATMLocator_WatchKit_App" customModuleProvider="target"/>
+            </objects>
+            <point key="canvasLocation" x="468" y="643"/>
+        </scene>
+    </scenes>
+</document>
