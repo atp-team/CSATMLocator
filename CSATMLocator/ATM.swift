@@ -28,7 +28,7 @@ class ATM : ResponseObjectSerializable{
     let id : String //id of the Branch or ATM
     let location : CLLocation //location - latitude, longitude, accuracy
     let type : PlaceType //type of the place
-    let state : PlaceState //place state. It does not reflect the instant state according to opening hours. It rather means general (long-term) status: if it normaly works, state is OPEN. If it is short-term out of order due tu e.g. service works, then it is OUT_OF_ORDER and in stateNote field there are more details. If it is long-term closed (e.g. cancelled), then it is CLOSED.
+//    let state : PlaceState //place state. It does not reflect the instant state according to opening hours. It rather means general (long-term) status: if it normaly works, state is OPEN. If it is short-term out of order due tu e.g. service works, then it is OUT_OF_ORDER and in stateNote field there are more details. If it is long-term closed (e.g. cancelled), then it is CLOSED.
     let stateNote : String?
     var distance : Int?
     let name : String
@@ -54,9 +54,9 @@ class ATM : ResponseObjectSerializable{
             let address = json["address"].string,
             let city = json["city"].string,
             let postCode = json["postCode"].string,
-            let stateString = json["state"].string,
+//            let stateString = json["state"].string,
+//            let state = PlaceState(rawValue: stateString),
             let typeString = json["type"].string,
-            let state = PlaceState(rawValue: stateString),
             let type = PlaceType(rawValue: typeString),
             let bankCode = json["bankCode"].string,
             let accessType = json["accessType"].string
@@ -65,7 +65,7 @@ class ATM : ResponseObjectSerializable{
             self.location = CLLocation()
             self.name = ""
             self.type = .ATM
-            self.state = .Open
+//            self.state = .Open
             self.stateNote = nil
             self.address = ""
             self.city = ""
@@ -92,7 +92,7 @@ class ATM : ResponseObjectSerializable{
         self.id = "place_\(id)"
         self.name = name
         self.type = type
-        self.state = state
+//        self.state = state
         self.bankCode = bankCode
         self.accessType = accessType
     }

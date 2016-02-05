@@ -117,7 +117,9 @@ class ApiManager {
     static let callbackQueue = dispatch_queue_create("Api.Callback.Queue", DISPATCH_QUEUE_CONCURRENT)
     
     static let sharedInstance: Manager = {
-        var defaultHeaders = Alamofire.Manager.sharedInstance.session.configuration.HTTPAdditionalHeaders ?? ["WEB-API-key": WebApi.KEY]
+        var defaultHeaders = Alamofire.Manager.sharedInstance.session.configuration.HTTPAdditionalHeaders
+        
+        defaultHeaders!["WEB-API-key"] = WebApi.KEY
         let configuration = NSURLSessionConfiguration.defaultSessionConfiguration()
         configuration.HTTPAdditionalHeaders = defaultHeaders
         
@@ -187,7 +189,8 @@ extension JSON{
     func toApiObjectCollection<T: ResponseObjectSerializable>() -> [T]?
     {
         let realType = T.self
-        if let array = self.array{
+        if let array = self.dictionary!["items"]?.array {
+      //  if let array = self.array{
             var resultArray = [T]()
             for jsonEntry in array{
                 if let manifestedEntity = realType.init(json: jsonEntry){
