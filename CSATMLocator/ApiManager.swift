@@ -5,7 +5,7 @@
 //  Created by Vratislav Kalenda on 20/07/15.
 //  Copyright © 2015 Vratislav Kalenda. All rights reserved.
 //
-
+import UIKit
 import Foundation
 import Alamofire
 import RxSwift
@@ -116,13 +116,10 @@ class ApiManager {
     
     static let callbackQueue = dispatch_queue_create("Api.Callback.Queue", DISPATCH_QUEUE_CONCURRENT)
     
-    static let baseURL = "https://api.csas.cz/sandbox/webapi/api/v2"
-    
     static let sharedInstance: Manager = {
-        var defaultHeaders = Alamofire.Manager.sharedInstance.session.configuration.HTTPAdditionalHeaders ?? ["WEB-API-key":AppDelegate.WEB_API_KEY]
+        var defaultHeaders = Alamofire.Manager.sharedInstance.session.configuration.HTTPAdditionalHeaders ?? ["WEB-API-key": WebApi.KEY]
         let configuration = NSURLSessionConfiguration.defaultSessionConfiguration()
         configuration.HTTPAdditionalHeaders = defaultHeaders
-
         
         return Alamofire.Manager(configuration: configuration)
     }()

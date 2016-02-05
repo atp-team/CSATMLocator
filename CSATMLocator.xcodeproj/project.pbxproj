@@ -22,6 +22,8 @@
 		262F93F81C60107E00E0576A /* ApiManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 260F121D1BAA0EAF00223799 /* ApiManager.swift */; };
 		26D189841C6000510032499F /* CSATMLocator WatchKit Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = E8BB6FAA1BAD91CC0045F267 /* CSATMLocator WatchKit Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		26D189871C6000510032499F /* CSATMLocator WatchKit App.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = E8BB6FB71BAD91CC0045F267 /* CSATMLocator WatchKit App.app */; };
+		505C200C1C64EFF300210A2C /* WebApi.swift in Sources */ = {isa = PBXBuildFile; fileRef = 505C200B1C64EFF300210A2C /* WebApi.swift */; };
+		505C200D1C64F00B00210A2C /* WebApi.swift in Sources */ = {isa = PBXBuildFile; fileRef = 505C200B1C64EFF300210A2C /* WebApi.swift */; };
 		E81E9EAF1BAD2DF200FB8DCF /* CSLocationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = E81E9EAE1BAD2DF200FB8DCF /* CSLocationManager.swift */; };
 		E8BB6FAF1BAD91CC0045F267 /* InterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8BB6FAE1BAD91CC0045F267 /* InterfaceController.swift */; };
 		E8BB6FB11BAD91CC0045F267 /* NotificationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8BB6FB01BAD91CC0045F267 /* NotificationController.swift */; };
@@ -109,6 +111,7 @@
 		262F93F01C60106C00E0576A /* RxSwift.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RxSwift.framework; path = Carthage/Build/iOS/RxSwift.framework; sourceTree = "<group>"; };
 		262F93F11C60106C00E0576A /* RxTests.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RxTests.framework; path = Carthage/Build/iOS/RxTests.framework; sourceTree = "<group>"; };
 		262F93F91C6010A900E0576A /* Alamofire.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Alamofire.framework; path = Carthage/Build/watchOS/Alamofire.framework; sourceTree = "<group>"; };
+		505C200B1C64EFF300210A2C /* WebApi.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WebApi.swift; sourceTree = "<group>"; };
 		E81E9EAE1BAD2DF200FB8DCF /* CSLocationManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CSLocationManager.swift; sourceTree = "<group>"; };
 		E85D11521C615B3B006DB1AA /* RxBlocking.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RxBlocking.framework; path = Carthage/Build/watchOS/RxBlocking.framework; sourceTree = "<group>"; };
 		E85D11531C615B3B006DB1AA /* RxCocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RxCocoa.framework; path = Carthage/Build/watchOS/RxCocoa.framework; sourceTree = "<group>"; };
@@ -195,9 +198,10 @@
 			children = (
 				260F12211BAA126B00223799 /* model */,
 				260F121F1BAA0F4300223799 /* CSError.swift */,
-				260F121D1BAA0EAF00223799 /* ApiManager.swift */,
 				260F121B1BAA0E2000223799 /* SwiftyJSON.swift */,
 				260F12261BAAD6A300223799 /* ApiClient.swift */,
+				260F121D1BAA0EAF00223799 /* ApiManager.swift */,
+				505C200B1C64EFF300210A2C /* WebApi.swift */,
 			);
 			name = api;
 			sourceTree = "<group>";
@@ -450,6 +454,7 @@
 				260F12201BAA0F4300223799 /* CSError.swift in Sources */,
 				260F12271BAAD6A300223799 /* ApiClient.swift in Sources */,
 				E8D3815C1BAD46D800927472 /* CSStyles.swift in Sources */,
+				505C200C1C64EFF300210A2C /* WebApi.swift in Sources */,
 				260F12231BAA128B00223799 /* ATM.swift in Sources */,
 				E81E9EAF1BAD2DF200FB8DCF /* CSLocationManager.swift in Sources */,
 				E8D381581BAD374400927472 /* CSViewController.swift in Sources */,
@@ -466,6 +471,7 @@
 				E8BB6FB11BAD91CC0045F267 /* NotificationController.swift in Sources */,
 				E8BB6FAF1BAD91CC0045F267 /* InterfaceController.swift in Sources */,
 				262F93F81C60107E00E0576A /* ApiManager.swift in Sources */,
+				505C200D1C64F00B00210A2C /* WebApi.swift in Sources */,
 				E8BB6FD81BAD9FD70045F267 /* SwiftyJSON.swift in Sources */,
 				E8BB6FD71BAD99AE0045F267 /* ATM.swift in Sources */,
 			);

@@ -100,5 +100,5 @@ class ATM : ResponseObjectSerializable{
 
 extension ATM {
     
-    static let atmsUrl : String = ApiManager.baseURL + "/places/atms"
+    static let atmsUrl : String = WebApi.baseURL + "/places/atms"
 }
