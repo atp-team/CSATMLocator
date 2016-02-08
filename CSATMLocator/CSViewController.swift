@@ -157,10 +157,10 @@ class CSViewController: UIViewController, MKMapViewDelegate {
             let identifier = "ATM"
             var annotationView: MKAnnotationView
             if let dequeuedView = mapView.dequeueReusableAnnotationViewWithIdentifier(identifier){
-                    dequeuedView.annotation = annotation
-                    annotationView = dequeuedView
+                dequeuedView.annotation = annotation
+                annotationView = dequeuedView
             } else {
-
+                
                 annotationView = MKAnnotationView(annotation: annotation, reuseIdentifier: identifier)
                 annotationView.canShowCallout = true
                 let image = UIImage(named: "markerATM")
@@ -191,7 +191,17 @@ class CSViewController: UIViewController, MKMapViewDelegate {
     
     func requestNearestATM(location: CLLocationCoordinate2D, force: Bool)
     {
-        self.apiClient.getAtms(location, limit: 50, bankCode: nil).take(1).observeOn(MainScheduler.instance).subscribeNext({ (places: [ATM]) in
+        self.apiClient.getAtms(location, limit: 50, bankCode: nil).take(1).map({ (atms:[ATM]) -> [ATM] in
+            if atms.count > 20{
+                var reducedAtms:[ATM] = [ATM]()
+                for var i = 0; i < 20; i++ {
+                    reducedAtms.append(atms[i])
+                }
+                return reducedAtms
+            }else{
+                return atms
+            }
+        }).observeOn(MainScheduler.instance).subscribeNext({ (places: [ATM]) in
             if places.count > 0 {
                 self.updateNearestATM(places, force: force)
             }
