@@ -11,7 +11,7 @@ This repository contains iOS application demonstrating the usage of API of Ceska
 
 1) Install latest version of [Carthage](https://github.com/Carthage/Carthage) and make sure you have recent version of `git`.
 
-2) Clone this repository using command `git clone git@github.com:[tbd]`
+2) Clone this repository using command `git clone git@github.com:ceskasporitelna/CSATMLocator.git`
 
 3) Enter into cloned directory using command `cd CSATMLocator`.
 
