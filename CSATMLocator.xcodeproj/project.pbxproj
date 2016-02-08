@@ -24,6 +24,8 @@
 		26D189871C6000510032499F /* CSATMLocator WatchKit App.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = E8BB6FB71BAD91CC0045F267 /* CSATMLocator WatchKit App.app */; };
 		505C200C1C64EFF300210A2C /* WebApi.swift in Sources */ = {isa = PBXBuildFile; fileRef = 505C200B1C64EFF300210A2C /* WebApi.swift */; };
 		505C200D1C64F00B00210A2C /* WebApi.swift in Sources */ = {isa = PBXBuildFile; fileRef = 505C200B1C64EFF300210A2C /* WebApi.swift */; };
+		505C200F1C68D0FC00210A2C /* AtmMapAnnotation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 505C200E1C68D0FC00210A2C /* AtmMapAnnotation.swift */; };
+		505C20101C68D5EE00210A2C /* AtmMapAnnotation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 505C200E1C68D0FC00210A2C /* AtmMapAnnotation.swift */; };
 		E81E9EAF1BAD2DF200FB8DCF /* CSLocationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = E81E9EAE1BAD2DF200FB8DCF /* CSLocationManager.swift */; };
 		E8BB6FAF1BAD91CC0045F267 /* InterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8BB6FAE1BAD91CC0045F267 /* InterfaceController.swift */; };
 		E8BB6FB11BAD91CC0045F267 /* NotificationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8BB6FB01BAD91CC0045F267 /* NotificationController.swift */; };
@@ -112,6 +114,7 @@
 		262F93F11C60106C00E0576A /* RxTests.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RxTests.framework; path = Carthage/Build/iOS/RxTests.framework; sourceTree = "<group>"; };
 		262F93F91C6010A900E0576A /* Alamofire.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Alamofire.framework; path = Carthage/Build/watchOS/Alamofire.framework; sourceTree = "<group>"; };
 		505C200B1C64EFF300210A2C /* WebApi.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WebApi.swift; sourceTree = "<group>"; };
+		505C200E1C68D0FC00210A2C /* AtmMapAnnotation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AtmMapAnnotation.swift; sourceTree = "<group>"; };
 		E81E9EAE1BAD2DF200FB8DCF /* CSLocationManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CSLocationManager.swift; sourceTree = "<group>"; };
 		E85D11521C615B3B006DB1AA /* RxBlocking.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RxBlocking.framework; path = Carthage/Build/watchOS/RxBlocking.framework; sourceTree = "<group>"; };
 		E85D11531C615B3B006DB1AA /* RxCocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RxCocoa.framework; path = Carthage/Build/watchOS/RxCocoa.framework; sourceTree = "<group>"; };
@@ -210,6 +213,7 @@
 			isa = PBXGroup;
 			children = (
 				260F12221BAA128B00223799 /* ATM.swift */,
+				505C200E1C68D0FC00210A2C /* AtmMapAnnotation.swift */,
 			);
 			name = model;
 			sourceTree = "<group>";
@@ -449,6 +453,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				505C200F1C68D0FC00210A2C /* AtmMapAnnotation.swift in Sources */,
 				260F121E1BAA0EAF00223799 /* ApiManager.swift in Sources */,
 				260F121C1BAA0E2000223799 /* SwiftyJSON.swift in Sources */,
 				260F12201BAA0F4300223799 /* CSError.swift in Sources */,
@@ -471,6 +476,7 @@
 				E8BB6FB11BAD91CC0045F267 /* NotificationController.swift in Sources */,
 				E8BB6FAF1BAD91CC0045F267 /* InterfaceController.swift in Sources */,
 				262F93F81C60107E00E0576A /* ApiManager.swift in Sources */,
+				505C20101C68D5EE00210A2C /* AtmMapAnnotation.swift in Sources */,
 				505C200D1C64F00B00210A2C /* WebApi.swift in Sources */,
 				E8BB6FD81BAD9FD70045F267 /* SwiftyJSON.swift in Sources */,
 				E8BB6FD71BAD99AE0045F267 /* ATM.swift in Sources */,

@@ -24,7 +24,6 @@ class CSViewController: UIViewController, MKMapViewDelegate {
     private var mapViewDefaultCornerRadius = CGFloat(140)
     private var isFullscreen = false
     
-    private var annotationsOnMap = [MKAnnotation]()
     
     //Interface
     @IBOutlet weak var mapView: MKMapView!
@@ -152,6 +151,26 @@ class CSViewController: UIViewController, MKMapViewDelegate {
         self.selectedMarker = nil
     }
     
+    func mapView(mapView: MKMapView, viewForAnnotation annotation: MKAnnotation) -> MKAnnotationView?
+    {
+        if let annotation = annotation as? AtmMapAnnotation {
+            let identifier = "ATM"
+            var annotationView: MKAnnotationView
+            if let dequeuedView = mapView.dequeueReusableAnnotationViewWithIdentifier(identifier){
+                    dequeuedView.annotation = annotation
+                    annotationView = dequeuedView
+            } else {
+
+                annotationView = MKAnnotationView(annotation: annotation, reuseIdentifier: identifier)
+                annotationView.canShowCallout = true
+                let image = UIImage(named: "markerATM")
+                annotationView.image = image
+            }
+            return annotationView
+        }
+        return nil
+    }
+    
     // MARK: Location Management
     func startFollowingUser()
     {
@@ -165,7 +184,7 @@ class CSViewController: UIViewController, MKMapViewDelegate {
     
     func startRequestingNearestATM()
     {
-        let brake = Observable<Int>.interval(5, scheduler: MainScheduler.instance).observeOn(MainScheduler.instance).subscribeNext({ num in
+        let brake = Observable<Int>.interval(8, scheduler: MainScheduler.instance).observeOn(MainScheduler.instance).subscribeNext({ num in
             self.requestNearestATM(self.userLocation, force: false)
         })
     }
@@ -183,32 +202,22 @@ class CSViewController: UIViewController, MKMapViewDelegate {
     func addMarkerToMap(marker: MKAnnotation)
     {
         self.mapView.addAnnotation(marker)
-        self.annotationsOnMap.append(marker)
     }
     
     func removeAllMarkers()
     {
-        self.mapView.removeAnnotations(self.annotationsOnMap)
-        self.annotationsOnMap.removeAll()
+        let annotationsToRemove = mapView.annotations.filter { $0 !== mapView.userLocation }
+        mapView.removeAnnotations( annotationsToRemove )
     }
     
     // MARK: ATM Management
-    func markerForATM(atm: ATM) -> MKPointAnnotation
-    {
-        let marker = MKPointAnnotation()
-        marker.coordinate = atm.location.coordinate
-        marker.title = atm.name
-        marker.subtitle = atm.address
-        return marker
-    }
-    
     func updateNearestATM(atms: [ATM], force: Bool)
     {
         if self.isFullscreen {
             self.removeAllMarkers()
             self.nearestATM = atms[0]
             for atm in atms{
-                self.addMarkerToMap(markerForATM(atm))
+                self.addMarkerToMap(atm.getMapAnnotation())
             }
         }else{
             if atms.count > 0 {
@@ -217,7 +226,7 @@ class CSViewController: UIViewController, MKMapViewDelegate {
                 }
                 self.removeAllMarkers()
                 self.nearestATM = atms[0]
-                self.addMarkerToMap(markerForATM(atms[0]))
+                self.addMarkerToMap(atms[0].getMapAnnotation())
                 self.updateMapRegion()
             }
         }
