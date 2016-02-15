@@ -102,3 +102,12 @@ extension ATM {
     
     static let atmsUrl : String = WebApi.baseURL + "/places/atms"
 }
+
+
+extension ATM {
+    
+    func getMapAnnotation()->AtmMapAnnotation
+    {
+        return AtmMapAnnotation(title: self.name, locationName: self.address, coordinate: self.location.coordinate)
+    }
+}
